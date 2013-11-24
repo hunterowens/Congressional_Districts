@@ -16,7 +16,8 @@ $ gunzip districts.json
 And you can then accesss the file. To avoid adding the full file to git when running commands such as `git add .`, `districts.json` is in the gitignore. Should you make modifications to file, run gzip `districts.json`, add the file to git and then push it to origin. Pull Requests Welcome. 
 
 One way to the load the geojson onto a map is to use [Tilemill](https://www.mapbox.com/tilemill/) and add the file `districts.json` as a layer.
-![Example Map] 
+
+![Example Map](https://raw.github.com/hunterowens/Congressional_Districts/master/CongressionalDistricts.png)
 
 ==============================================
 
