@@ -5,6 +5,19 @@ A geojson representation of the 113th Congress.
 
 Converision was done from the [2013 Tiger Line Shapefiles](http://www.census.gov/cgi-bin/geo/shapefiles2013/layers.cgi) using the [GDAL](http://www.gdal.org/) library. 
 
+The file `districts.json` is too large to have stored in github (100.4 MB), so it is pushed gziped to github. 
+
+To get the file on your computer -
+```
+$ git clone http://github.com/hunterowens/Congressional_Districts.git
+$ cd Congressional_Districts
+$ gunzip districts.json
+```
+And you can then accesss the file. To avoid adding the full file to git when running commands such as `git add .`, `districts.json` is in the gitignore. Should you make modifications to file, run gzip `districts.json`, add the file to git and then push it to origin. Pull Requests Welcome. 
+
+One way to the load the geojson onto a map is to use [Tilemill](https://www.mapbox.com/tilemill/) and add the file `districts.json` as a layer.
+![Example Map] 
+
 ==============================================
 
 The MIT License (MIT)
